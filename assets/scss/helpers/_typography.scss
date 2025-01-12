@@ -1,0 +1,130 @@
+$font-family: "Roboto", sans-serif; // Replace 'YourFont' with your font name
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+%base-title {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+%base-paragraph {
+  font-family: $font-family;
+  font-weight: $font-weight-normal;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+}
+
+.display-xlarge {
+  @extend %base-title;
+  // font-size: 68px;
+  font-size: clamp(1.5rem, 0.0372rem + 4.6809vw, 4.25rem);
+
+  line-height: clamp(1.875rem, 0.7574rem + 4.1584vw, 4.5rem);
+  letter-spacing: -2%;
+}
+
+.display-large {
+  @extend %base-title;
+  font-size: 52px;
+  line-height: 56px;
+  letter-spacing: -2%;
+}
+
+.display-small {
+  @extend %base-title;
+  font-size: 44px;
+  font-size: clamp(1.25rem, 0.6114rem + 2.3762vw, 2.75rem);
+  font-size: clamp(1.375rem, 0.6832rem + 2.5743vw, 3rem);
+  letter-spacing: -2%;
+}
+
+.heading-h1 {
+  @extend %base-title;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -2%;
+}
+
+.heading-h2 {
+  @extend %base-title;
+  // font-size: 36px;
+  font-size: clamp(1.5rem, 1.319rem + 1.0345vw, 2.25rem);
+  line-height: 44px;
+  letter-spacing: -2%;
+}
+
+.heading-h3 {
+  @extend %base-title;
+  font-size: clamp(1.25rem, 0.9307rem + 1.1881vw, 2rem);
+  line-height: 40px;
+  letter-spacing: -1%;
+}
+
+.heading-h4 {
+  @extend %base-title;
+  // font-size: 28px;
+  font-size: clamp(1rem, 0.6807rem + 1.1881vw, 1.75rem);
+  line-height: 36px;
+  letter-spacing: -2%;
+}
+
+.heading-h5 {
+  @extend %base-title;
+  // font-size: 24px;
+  font-size: clamp(0.875rem, 0.6089rem + 0.9901vw, 1.5rem);
+  line-height: clamp(1.25rem, 0.9307rem + 1.1881vw, 2rem);
+  letter-spacing: -1%;
+}
+
+.heading-h6 {
+  @extend %base-title;
+  // font-size: 20px;
+  font-size: clamp(0.875rem, 0.7153rem + 0.5941vw, 1.25rem);
+  line-height: 28px;
+  letter-spacing: -2%;
+}
+
+// Paragraphs
+.paragraph-large {
+  @extend %base-paragraph;
+  // font-size: 18px;
+  font-size: clamp(1rem, 0.9468rem + 0.198vw, 1.125rem);
+  line-height: 28px;
+}
+
+.paragraph-medium {
+  @extend %base-paragraph;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.paragraph-small {
+  @extend %base-paragraph;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.paragraph-xsmall {
+  @extend %base-paragraph;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+// Overline
+.overline {
+  font-family: $font-family;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  line-height: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1%; // Optional, adjust if needed
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,50 @@
+@use "./colors" as *;
+
+.btn {
+  font-family: "Roboto", sans-serif;
+
+  border: none;
+  &--cta {
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 40px;
+    width: fit-content;
+    color: $neutral-white;
+    border-radius: 3px;
+    background: var(
+      --Color-Gradient-Orange,
+      linear-gradient(180deg, #ef7d00 50%, #ffa238 100%)
+    );
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    &:hover {
+      background: linear-gradient(180deg, #965a19 50%, #743e00 100%);
+    }
+  }
+
+  &--transparent {
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 40px;
+    border-radius: 3px;
+    border: 1px solid var(--Brand-500, #f68121);
+
+    &:hover {
+      background: linear-gradient(180deg, #965a19 50%, #743e00 100%);
+      border-color: linear-gradient(180deg, #965a19 50%, #743e00 100%);
+    }
+  }
+
+  &--rounded {
+    border-radius: 40px;
+    background: var(--Color-Gray-300, #d5d7da);
+
+    &:hover {
+      background: var(
+        --Color-Gradient-Orange,
+        linear-gradient(180deg, #ef7d00 50%, #ffa238 100%)
+      );
+    }
+  }
+}

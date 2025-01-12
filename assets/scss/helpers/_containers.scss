@@ -1,0 +1,40 @@
+@use "sass:map";
+$site-width: 1440px;
+$base-padding: 16px;
+
+$container-sizes: (
+  first: calc(#{$site-width} - 64px),
+  second: calc(#{$site-width} - 240px),
+  third: calc(#{$site-width} - 320px),
+  fourth: calc(#{$site-width} - 280px),
+);
+
+@mixin container($type) {
+  max-width: map.get($container-sizes, $type);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $base-padding;
+  padding-right: $base-padding;
+
+  // @media (min-width: $site-width) {
+  //   padding-left: 0;
+  //   padding-right: 0;
+  // }
+}
+
+.container-first {
+  @include container(first);
+}
+
+.container-second {
+  @include container(second);
+}
+
+.container-third {
+  @include container(third);
+}
+
+.container-fourth {
+  @include container(fourth);
+}

@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Postep</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <main>
+      <section class="product-info">
+        <div class="container-second">
+          <div class="product-info-btns">
+            <button class="info-btn">
+              <p>Informacje o produkcie</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="47"
+                height="47"
+                viewBox="0 0 47 47"
+                fill="none"
+              >
+                <path
+                  d="M25.9847 7.18473C26.5723 6.59732 27.3691 6.26733 28.2 6.26733C29.0308 6.26733 29.8277 6.59732 30.4153 7.18473L44.5153 21.2847C45.1027 21.8723 45.4326 22.6691 45.4326 23.5C45.4326 24.3308 45.1027 25.1277 44.5153 25.7153L30.4153 39.8153C29.8243 40.386 29.0328 40.7018 28.2113 40.6947C27.3897 40.6876 26.6038 40.358 26.0229 39.7771C25.4419 39.1961 25.1124 38.4103 25.1053 37.5887C25.0981 36.7672 25.414 35.9757 25.9847 35.3847L34.4667 26.6333H4.69998C3.86897 26.6333 3.072 26.3032 2.48438 25.7156C1.89677 25.128 1.56665 24.331 1.56665 23.5C1.56665 22.669 1.89677 21.872 2.48438 21.2844C3.072 20.6968 3.86897 20.3667 4.69998 20.3667H34.4667L25.9847 11.6153C25.3973 11.0277 25.0673 10.2308 25.0673 9.4C25.0673 8.56915 25.3973 7.77232 25.9847 7.18473Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button class="info-btn">
+              <p>Wymiary</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="47"
+                height="47"
+                viewBox="0 0 47 47"
+                fill="none"
+              >
+                <path
+                  d="M25.9847 7.18473C26.5723 6.59732 27.3691 6.26733 28.2 6.26733C29.0308 6.26733 29.8277 6.59732 30.4153 7.18473L44.5153 21.2847C45.1027 21.8723 45.4326 22.6691 45.4326 23.5C45.4326 24.3308 45.1027 25.1277 44.5153 25.7153L30.4153 39.8153C29.8243 40.386 29.0328 40.7018 28.2113 40.6947C27.3897 40.6876 26.6038 40.358 26.0229 39.7771C25.4419 39.1961 25.1124 38.4103 25.1053 37.5887C25.0981 36.7672 25.414 35.9757 25.9847 35.3847L34.4667 26.6333H4.69998C3.86897 26.6333 3.072 26.3032 2.48438 25.7156C1.89677 25.128 1.56665 24.331 1.56665 23.5C1.56665 22.669 1.89677 21.872 2.48438 21.2844C3.072 20.6968 3.86897 20.3667 4.69998 20.3667H34.4667L25.9847 11.6153C25.3973 11.0277 25.0673 10.2308 25.0673 9.4C25.0673 8.56915 25.3973 7.77232 25.9847 7.18473Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+            <button class="info-btn">
+              <p>Inne</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="47"
+                height="47"
+                viewBox="0 0 47 47"
+                fill="none"
+              >
+                <path
+                  d="M25.9847 7.18473C26.5723 6.59732 27.3691 6.26733 28.2 6.26733C29.0308 6.26733 29.8277 6.59732 30.4153 7.18473L44.5153 21.2847C45.1027 21.8723 45.4326 22.6691 45.4326 23.5C45.4326 24.3308 45.1027 25.1277 44.5153 25.7153L30.4153 39.8153C29.8243 40.386 29.0328 40.7018 28.2113 40.6947C27.3897 40.6876 26.6038 40.358 26.0229 39.7771C25.4419 39.1961 25.1124 38.4103 25.1053 37.5887C25.0981 36.7672 25.414 35.9757 25.9847 35.3847L34.4667 26.6333H4.69998C3.86897 26.6333 3.072 26.3032 2.48438 25.7156C1.89677 25.128 1.56665 24.331 1.56665 23.5C1.56665 22.669 1.89677 21.872 2.48438 21.2844C3.072 20.6968 3.86897 20.3667 4.69998 20.3667H34.4667L25.9847 11.6153C25.3973 11.0277 25.0673 10.2308 25.0673 9.4C25.0673 8.56915 25.3973 7.77232 25.9847 7.18473Z"
+                  fill="black"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="overlay"></div>
+          <div class="product-popup">
+            <div class="popup-content">
+              <button id="closePopup">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="53"
+                  height="53"
+                  viewBox="0 0 53 53"
+                  fill="none"
+                >
+                  <path
+                    d="M41.9582 14.1557L38.8444 11.042L26.4998 23.3866L14.1553 11.042L11.0415 14.1557L23.3861 26.5003L11.0415 38.8449L14.1553 41.9587L26.4998 29.6141L38.8444 41.9587L41.9582 38.8449L29.6136 26.5003L41.9582 14.1557Z"
+                    fill="black"
+                  />
+                </svg>
+              </button>
+              <div id="popupContent">
+                <div class="title display-small">
+                  <p>
+                    Informacje<br />
+                    o produkcie
+                  </p>
+                </div>
+                <div class="desc">
+                  <p>
+                    Opis produktu Opis produktu Opis produktu Opis produktu Opis
+                    produktu Opis produktu
+                  </p>
+                </div>
+                <div class="accordions">
+                  <div class="accordion">
+                    <input type="checkbox" id="question-1" />
+                    <label
+                      for="question-1"
+                      class="accordion__header"
+                      id="question-1"
+                      >What is an accordion?
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="52"
+                        height="26"
+                        viewBox="0 0 52 26"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_846_7242)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.1113 20.313L12 9.55792L14.7773 6.86963L24.5 16.2805L34.2227 6.86963L37 9.55792L25.8887 20.313C25.5203 20.6694 25.0208 20.8696 24.5 20.8696C23.9792 20.8696 23.4797 20.6694 23.1113 20.313Z"
+                            fill="black"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_846_7242">
+                            <rect
+                              width="25"
+                              height="52"
+                              fill="white"
+                              transform="translate(52 0.869629) rotate(90)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </label>
+                    <div class="accordion__content">
+                      <p>
+                        An accordion is a UI pattern that lets users toggle
+                        sections of content, allowing them to expand or collapse
+                        information for a more compact and organized display.
+                        It’s commonly used for FAQs or grouped content.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion">
+                    <input type="checkbox" id="question-2" />
+                    <label for="question-2" class="accordion__header"
+                      >How do I implement it?
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="52"
+                        height="26"
+                        viewBox="0 0 52 26"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_846_7242)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.1113 20.313L12 9.55792L14.7773 6.86963L24.5 16.2805L34.2227 6.86963L37 9.55792L25.8887 20.313C25.5203 20.6694 25.0208 20.8696 24.5 20.8696C23.9792 20.8696 23.4797 20.6694 23.1113 20.313Z"
+                            fill="black"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_846_7242">
+                            <rect
+                              width="25"
+                              height="52"
+                              fill="white"
+                              transform="translate(52 0.869629) rotate(90)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </label>
+                    <div class="accordion__content">
+                      <p>
+                        You can implement an accordion using a combination of
+                        HTML and CSS by utilizing input elements, such as
+                        checkboxes, along with labels to control visibility.
+                        This approach not only achieves functionality without
+                        JavaScript but also enhances accessibility by ensuring
+                        proper interaction with screen readers and keyboard
+                        navigation.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="accordion">
+                    <input type="checkbox" id="question-3" />
+                    <label for="question-3" class="accordion__header"
+                      >Do I need JavaScript for this?
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="52"
+                        height="26"
+                        viewBox="0 0 52 26"
+                        fill="none"
+                      >
+                        <g clip-path="url(#clip0_846_7242)">
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M23.1113 20.313L12 9.55792L14.7773 6.86963L24.5 16.2805L34.2227 6.86963L37 9.55792L25.8887 20.313C25.5203 20.6694 25.0208 20.8696 24.5 20.8696C23.9792 20.8696 23.4797 20.6694 23.1113 20.313Z"
+                            fill="black"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_846_7242">
+                            <rect
+                              width="25"
+                              height="52"
+                              fill="white"
+                              transform="translate(52 0.869629) rotate(90)"
+                            />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </label>
+                    <div class="accordion__content">
+                      <p>
+                        No, you don’t need JavaScript to create a basic
+                        accordion. A simple accordion can be built using only
+                        HTML and CSS, which provides essential functionality
+                        like toggling content visibility. However, if you want
+                        to add more advanced features—such as animations,
+                        dynamic behavior, or interactive control over multiple
+                        sections—JavaScript can be introduced to enhance the
+                        user experience and offer greater customization options.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="product-similar">
+        <div class="container-second">
+          <div class="product-similar-title heading-h3">
+            <p>Produkty pokrewne</p>
+          </div>
+          <div class="splide" id="similar-carousel">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <a href="#">
+                    <img
+                      width="281"
+                      height="281"
+                      loading="lazy"
+                      src="./assets/imgs/product/item1.png"
+                      alt="adawards"
+                    />
+                    <div class="text">
+                      <p>Szafka model ##</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#">
+                    <img
+                      width="281"
+                      height="281"
+                      loading="lazy"
+                      src="./assets/imgs/product/item2.jpeg"
+                      alt="another model"
+                    />
+                    <div class="text">
+                      <p>Szafka model ###</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#">
+                    <img
+                      width="281"
+                      height="281"
+                      loading="lazy"
+                      src="./assets/imgs/product/item3.png"
+                      alt="another model"
+                    />
+                    <div class="text">
+                      <p>Szafka model ###</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a href="#">
+                    <img
+                      width="281"
+                      height="281"
+                      loading="lazy"
+                      src="./assets/imgs/product/item4.png"
+                      alt="another model"
+                    />
+                    <div class="text">
+                      <p>Szafka model ###</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="titles">
+            <div class="title title--first">
+              <p>Dane firmy</p>
+            </div>
+            <div style="grid-column: span 2" class="title title--second">
+              <p>KONTAKT</p>
+            </div>
+            <div style="grid-column: span 2" class="title title--third">
+              <p>MAPA DOJAZDU</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="container">
+          <div class="info">
+            <div class="info-column info-column--first">
+              <div class="logo">
+                <img
+                  width="224"
+                  height="55"
+                  loading="lazy"
+                  src="./assets/imgs/logo-footer.png"
+                  alt="adawards"
+                />
+              </div>
+              <div class="text-row" style="margin-bottom: 15px">
+                <img
+                  width="26"
+                  height="26"
+                  src="./assets/imgs/footer/home.png"
+                  loading="lazy"
+                  alt="adawarads"
+                />
+                <p>
+                  <strong>POSTĘP Sp. z o.o.</strong>
+                  <br />
+                  ul. Wroniecka 56
+                  <br />
+                  62-045 Pniewy
+                </p>
+              </div>
+              <div class="text-row">
+                <img
+                  width="22"
+                  height="22"
+                  src="./assets/imgs/footer/info.png"
+                  loading="lazy"
+                  alt="adawarads"
+                />
+                <p>
+                  Sąd Rejonowy Poznań - Nowe Miasto i Wilda w Poznaniu, VIII
+                  Wydział Gospodarczy Krajowego Rejestru Sądowego<br /><br />
+
+                  <strong>KRS</strong>: 0000366012<br />
+                  <strong>NIP</strong>: 787-20-92-962<br />
+                  <strong>Regon</strong>: 301560186
+                </p>
+              </div>
+            </div>
+            <div class="info-column info-column--second">
+              <p>
+                <strong>Centrala</strong>
+                <br />
+                <br />
+                tel. +48 61 2911 065
+                <br />
+                fax +48 61 2911 008
+                <br />
+                postep@postep-pniewy.com.pl
+                <br />
+                <br />
+                <strong>Dział utrzymywania ruchu</strong>
+                <br />
+                <br />
+                tel. +48 61 4425 643
+                <br />
+                tel.  +48 692 463 109
+                <br />
+                pcyprowski@postep-pniewy.com.pl
+              </p>
+            </div>
+            <div class="info-column info-column--third">
+              <p>
+                <strong>Dział handlowy</strong>
+                <br />
+                <br />
+                tel. +48 61 4425 634
+                <br />
+                achojnacki@postep-pniewy.com.pl
+                <br />
+                <br />
+                <strong>Zakupy</strong>
+                <br />
+                <br />
+                tel. +48 61 4425 638
+                <br />
+                tel. +48 734 173 095
+                <br />
+                kmurek@postep-pniewy.com.pl
+              </p>
+            </div>
+            <div
+              style="grid-column: span 2"
+              class="info-column-map info-column--fourth"
+            >
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d792.7533892160664!2d16.26045945422061!3d52.5153987298964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470426d82f6b5667%3A0x370ed6ddba6b0358!2sPost%C4%99p%20Sp.%20z%20o.%20o.!5e0!3m2!1spl!2spl!4v1735856766094!5m2!1spl!2spl"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <a class="paragraph-small" href="#">RODO</a>
+          <a class="paragraph-small" href="#">Polityka prywatności</a>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="
+    https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+    "></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/test.js"></script>
+  </body>
+</html>
