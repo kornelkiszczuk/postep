@@ -2295,8 +2295,8 @@ main {
   opacity: 1 !important;
 }
 .main-carousel h1.animate-left::before {
-  -webkit-animation: slideInFromLeft 0.8s ease-in-out forwards;
-          animation: slideInFromLeft 0.8s ease-in-out forwards;
+  -webkit-animation: slideMaxInFromLeft 0.8s ease-in-out forwards;
+          animation: slideMaxInFromLeft 0.8s ease-in-out forwards;
   left: 0 !important;
 }
 .main-carousel h1::before {
@@ -2367,6 +2367,30 @@ main {
     opacity: 0;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@-webkit-keyframes slideMaxInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes slideMaxInFromLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   100% {
     opacity: 1;

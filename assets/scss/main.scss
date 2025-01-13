@@ -1417,7 +1417,7 @@ main {
 
     &.animate-left {
       &::before {
-        animation: slideInFromLeft 0.8s ease-in-out forwards;
+        animation: slideMaxInFromLeft 0.8s ease-in-out forwards;
         left: 0 !important;
         // opacity: 1;
       }
@@ -1478,6 +1478,17 @@ main {
         0% {
           opacity: 0;
           transform: translateX(-50%);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slideMaxInFromLeft {
+        0% {
+          opacity: 0;
+          transform: translateX(-100%);
         }
         100% {
           opacity: 1;
