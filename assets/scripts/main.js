@@ -58,7 +58,7 @@ var splide = new Splide("#main-carousel", {
   type: "loop",
   perPage: 1,
   perMove: 1,
-  autoplay: true,
+  autoplay: false,
   pagination: true,
   arrows: true,
 }).mount();
@@ -94,5 +94,81 @@ $(window).on("scroll resize", checkInView);
 checkInView(); // Trigger on page load
 //
 
-// product
-// accordion
+// splide.on("active", function (slide) {
+//   const $slide = $(slide.slide);
+//   const $buttons = $slide.find(".btns");
+//   const $heading = $slide.find("h1");
+
+//   // Reset state
+//   $buttons.css({
+//     opacity: 0,
+//     transform: "translateX(-100%)",
+//   });
+
+//   $slide.width(); // Trigger reflow
+
+//   setTimeout(function () {
+//     $buttons.addClass("animate-left");
+//     $heading.addClass("animate-left");
+//   }, 10);
+// });
+
+// splide.on("inactive", function (slide) {
+//   const $slide = $(slide.slide);
+//   const $buttons = $slide.find(".btns");
+//   const $heading = $slide.find("h1");
+
+//   $buttons.removeClass("animate-left");
+//   $heading.removeClass("animate-left");
+// });
+
+function triggerFirstSlideAnimation() {
+  const firstSlide = splide.Components.Slides.getAt(0);
+  splide.emit("active", firstSlide);
+}
+
+// Call the function to trigger the animation for the first slide
+triggerFirstSlideAnimation();
+
+splide.on("active", function (slide) {
+  const $slide = $(slide.slide);
+  const $buttons = $slide.find(".btns");
+  const $heading = $slide.find("h1");
+
+  // Reset state
+  $buttons.css({
+    opacity: 0,
+    transform: "translateX(-100%)",
+  });
+
+  $slide.width(); // Trigger reflow
+
+  setTimeout(function () {
+    $buttons.addClass("animate-left");
+    $heading.addClass("animate-left");
+  }, 10);
+});
+
+splide.on("inactive", function (slide) {
+  const $slide = $(slide.slide);
+  const $buttons = $slide.find(".btns");
+  const $heading = $slide.find("h1");
+
+  $buttons.removeClass("animate-left");
+  $heading.removeClass("animate-left");
+});
+
+const $hamburger = $(".header-hamburger"),
+  $navbar = $(".navbar-mobile");
+
+const toggleMenu = () => {
+  if ($navbar.hasClass("active")) {
+    $navbar.removeClass("active");
+    $hamburger.removeClass("header-hamburger--active");
+  } else {
+    $navbar.toggleClass("active");
+    $hamburger.toggleClass("header-hamburger--active");
+  }
+};
+
+$hamburger.on("click", toggleMenu);
